@@ -1,39 +1,39 @@
 function runPage1() {
-  background(255);
-  image(bg, 0, 0);
+    background(255);
+    image(bg, 0, 0)
+    
+    stroke(0);
 
-  strokeWeight(0);
-  stroke(0);
-  fill(0);
-  push();
-  textSize(30);
-  textFont("Comic Sans MS");
-  text("Critical  Heat  Flux", 200, 50);
-  //text('Forced Vibration with rotating unbalance' , 200 , 80);
+    fill(0);
+    push();
+    textSize(30);
+    textFont("Comic Sans MS");
+    text('Critical  Heat  Flux',200, 50);
+    //text('Forced Vibration with rotating unbalance' , 200 , 80);
 
-  textSize(16);
-  text("CONTROLS", 650, 452);
-  text("VARIABLES", 650, 115);
-  pop();
+    textSize(16);
+    text("CONTROLS", 650, 455);
+    text("VARIABLES", 650, 115);
+    pop();
 
-  push();
-  stroke(0);
+    push();
+    stroke(0);
 
-  // for (let i = 20; i < 591; i++) {
-  //     point(i, 480);
-  //     i += 2;
-  // }
+    // for (let i = 20; i < 591; i++) {
+    //     point(i, 480);
+    //     i += 2;
+    // }
 
-  // for (let i = 480; i < 570; i++) {
-  //     point(300, i);
-  //     i += 2;
-  // }
-  pop();
+    // for (let i = 480; i < 570; i++) {
+    //     point(300, i);
+    //     i += 2;
+    // }
+    pop();
 
-  spring1.initialise(voltage.inp, current.inp, length.inp, diameter.inp);
-  spring1.update(t, factor);
+    spring1.initialise(voltage.inp,current.inp,length.inp,diameter.inp);
+    spring1.update(t, factor);
 
-  spring1.show(0, 1, 0);
+    spring1.show(0, 1, 0);
   /*  text("m1" , 350 , 200);
     text("k1" , 550-20 , 470 );
     text("k2" , 550-10 , 570 );
@@ -89,12 +89,12 @@ function runPage1() {
     k2.draw();
     */
 
-  voltage.draw();
-  current.draw();
-  length.draw();
-  diameter.draw();
-  button1.draw();
-  button2.draw();
+    voltage.draw();
+    current.draw();
+    length.draw();
+    diameter.draw();
+    button1.draw();
+    button2.draw();
 
-  t = t + dt;
+    t = t + dt;
 }
