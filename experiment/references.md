@@ -14,8 +14,6 @@
     <ul style="list-style-type: none;">
     <li>Nagaraj Kamath | NITK</li>
     <li>Sooraj M | 191me184| NITK </li>
-    <li>Akshaya | NITK </li>
-    <li>Anusha B Salian | NITK</li>
      </ul></td>
      </ul></td>
   </tr>
