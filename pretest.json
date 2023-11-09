@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is Critical Heat Flux (CHF)?",
+      "answers": {
+        "a": "The temperature at which a substance starts to boil",
+        "b": "The maximum heat flux that a surface can withstand before experiencing a rapid rise in temperature",
+        "c": "The point at which a substance transitions from liquid to gas phase",
+        "d": "The minimum heat flux required to initiate nucleate boiling"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following factors affects Critical Heat Flux (CHF)?",
+      "answers": {
+        "a": "Fluid flow rate",
+        "b": "Pressure",
+        "c": "Surface roughness",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the consequence of exceeding Critical Heat Flux (CHF)?",
+      "answers": {
+        "a": "Decreased boiling efficiency",
+        "b": "No impact on the system",
+        "c": "Boiling transition to a higher quality phase",
+        "d": "Potential damage or failure of the system"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is a typical application of Critical Heat Flux (CHF)?",
+      "answers": {
+        "a": "Cooling of electronic components",
+        "b": "Food preservation",
+        "c": "Water purification",
+        "d": "Transportation of natural gas"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the primary mechanism responsible for CHF in forced convection?",
+      "answers": {
+        "a": "Pool boiling",
+        "b": "Nucleate boiling",
+        "c": "Film boiling",
+        "d": "Conduction"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

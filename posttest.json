@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which correlation is commonly used to predict Critical Heat Flux (CHF) in pool boiling?",
+      "answers": {
+        "a": "Dittus-Boelter equation",
+        "b": "Churchill equation",
+        "c": "Chen equation",
+        "d": "Nusselt equation"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Which fluid parameter has a significant impact on Critical Heat Flux (CHF) in subcooled boiling?",
+      "answers": {
+        "a": "Density",
+        "b": "Viscosity",
+        "c": "Surface tension",
+        "d": "Thermal conductivity"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the primary cause of dryout during Critical Heat Flux (CHF)?",
+      "answers": {
+        "a": "Inadequate cooling",
+        "b": "Insufficient heat transfer",
+        "c": "Excessive flow rate",
+        "d": "Formation of a vapor blanket"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which heat transfer mechanism dominates during Critical Heat Flux (CHF)?",
+      "answers": {
+        "a": "Conduction",
+        "b": "Convection",
+        "c": "Radiation",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is a consequence of increasing pressure on Critical Heat Flux (CHF)?",
+      "answers": {
+        "a": "Decreased CHF",
+        "b": "Increased CHF",
+        "c": "No effect on CHF",
+        "d": "Increased boiling point"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}
