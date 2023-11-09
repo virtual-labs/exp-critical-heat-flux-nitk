@@ -4,7 +4,7 @@
 
 2. Click on the play button and the simulation will begin.<br>
 
-   ![Alt text](images/4.png)
+   ![Alt text](images/3.png)
 
 3. Click on the next page button to view the results.<br>
 
