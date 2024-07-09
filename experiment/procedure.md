@@ -1,12 +1,25 @@
-1. Clicking on the simulation tab will open the following figure showing the simulator turned off, then click on the red coloured button and set appropriate variables<br>
+### Procedure
 
-   <img src="images/2.png" width="800" height="600" />
-   <!-- ![Alt text](images/2.png) -->
+<div style="text-align:left">
+  Click on the Objective icon <img src="images/objecticon.png" alt="Alt text" style="height:80px; width:80px;">  to view the Objective of the simulation. 
 
-2. Click on the play button and the simulation will begin.<br>
+   ![Alt text](images/Simscreen1.png)
+   
+   Click on the Description icon <img src="images/desicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the description of the simulation. 
 
-   <img src="images/3.png" width="800" height="600" />
+   ![Alt text](images/descriptionscreen.png)
 
-3. Click on the next page button to view the results.<br>
+  Click on the Experiment icon <img src="images/expicon.png" alt="Alt text" style="height:80px; width:80px;">  to view the experimental setup. 
 
-   <img src="images/4.png" width="800" height="600" />
+  ![Alt text](images/expscreen.png)
+
+   Click on the Start button <img src="images/startButton.png" alt="Alt text" style="height:80px; width:80px;"> to perform the experiment, click on the Next button <img src="images/next2.png" alt="Alt text" style="height:80px; width:80px;"> to move to the Observation and Calculation page.
+
+
+
+
+   ![Alt text](images/solvescreen.png)
+
+
+  
+</div>
