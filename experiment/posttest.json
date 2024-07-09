@@ -5,17 +5,17 @@
       "question": "Which correlation is commonly used to predict Critical Heat Flux (CHF) in pool boiling?",
       "answers": {
         "a": "Dittus-Boelter equation",
-        "b": "Churchill equation",
-        "c": "Chen equation",
+        "b": "Chen equation",
+        "c": "Churchill equation",
         "d": "Nusselt equation"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (b). The Dittus-Boelter equation are used for convective heat transfer calculations, not for predicting CHF in pool boiling. ",
+        "b": "Correct, the right answer is (b). The Chen correlation is commonly used to predict Critical Heat Flux (CHF) in pool boiling. This correlation takes into account the effects of both nucleate boiling and film boiling, which are the two main stages of boiling heat transfer.",
+        "c": "The right answer is (b). The Churchill equation is a general name for several correlations used in heat transfer, but it's not specifically known for predicting CHF in pool boiling.",
+        "d": "The right answer is (b). The Nusselt equation are used for convective heat transfer calculations, not for predicting CHF in pool boiling. "
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "advanced"
     },
     {
@@ -27,12 +27,12 @@
         "d": "Thermal conductivity"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (c). Density and viscosity can influence the buoyancy and motion of the bubbles, while thermal conductivity affects the conduction of heat through the fluid. However, these factors are secondary to surface tension in their impact on CHF.",
+        "b": "The right answer is (c). Density and viscosity can influence the buoyancy and motion of the bubbles, while thermal conductivity affects the conduction of heat through the fluid. However, these factors are secondary to surface tension in their impact on CHF.",
+        "c": "Correct, the right answer is (c). Surface tension plays a significant role in the Critical Heat Flux (CHF) during subcooled boiling. The reason for this is that surface tension is the primary force that causes the formation and departure of vapor bubbles from the heated surface during nucleate boiling, which is a precursor to CHF.",
+        "d": "The right answer is (c). Density and viscosity can influence the buoyancy and motion of the bubbles, while thermal conductivity affects the conduction of heat through the fluid. However, these factors are secondary to surface tension in their impact on CHF."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
@@ -44,10 +44,10 @@
         "d": "Formation of a vapor blanket"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (d). Inadequate cooling and insufficient heat transfer are consequences of dryout, not causes.",
+        "b": "The right answer is (d). Inadequate cooling and insufficient heat transfer are consequences of dryout, not causes.",
+        "c": "The right answer is (d). An excessive flow rate could potentially delay the onset of CHF by increasing convective cooling, but it's not the primary cause of dryout.",
+        "d": "Correct, the right answer is (d). During Critical Heat Flux (CHF), the primary cause of dryout is the formation of a vapor blanket or film on the heated surface. This happens when the heat flux is so high that the rate of bubble formation at the surface becomes intense. The bubbles coalesce and form a vapor film or blanket that insulates the surface from the liquid."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -61,12 +61,12 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (b). Conduction is the transfer of heat through a solid or stationary fluid, and while it does occur in the heated surface and in the fluid near the surface, the bulk of the heat transfer in boiling is convective.",
+        "b": "Correct, the right answer is (b). During Critical Heat Flux (CHF), the dominant heat transfer mechanism is convection. This is because CHF typically occurs during boiling, which is a type of convective heat transfer. In boiling, heat is transferred from the heated surface to the fluid primarily through the movement of bubbles, which is a convective process.",
+        "c": "The right answer is (b). Radiation is the transfer of heat through electromagnetic waves, and it typically plays a minor role compared to convection in most practical boiling scenarios.",
+        "d": "The right answer is (b). Convection heat transfer mechanism dominates during Critical Heat Flux (CHF). This is because CHF typically occurs during boiling, which is a type of convective heat transfer."
       },
-      "correctAnswer": "d",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
@@ -74,16 +74,16 @@
       "answers": {
         "a": "Decreased CHF",
         "b": "Increased CHF",
-        "c": "No effect on CHF",
-        "d": "Increased boiling point"
+        "c": "Increased boiling point",
+        "d": "Both b and c"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (d). Increasing the pressure in a system generally increases the Critical Heat Flux (CHF). This is because an increase in pressure raises the boiling point of the fluid, which means that more heat can be added before boiling (and thus CHF) occurs.",
+        "b": "The right answer is (d). Increasing the pressure in a system generally increases the Critical Heat Flux (CHF). This is because an increase in pressure raises the boiling point of the fluid, which means that more heat can be added before boiling (and thus CHF) occurs. But at the same time, increasing pressure also leads to an increased boiling point. This is a fundamental principle of thermodynamics known as the Clausius-Clapeyron relation, which states that the vapor pressure of a substance increases with temperature. Therefore, at higher pressures, a fluid will boil at a higher temperature.",
+        "c": "The right answer is (d). Increasing pressure also leads to an increased boiling point. This is a fundamental principle of thermodynamics known as the Clausius-Clapeyron relation, which states that the vapor pressure of a substance increases with temperature. Therefore, at higher pressures, a fluid will boil at a higher temperature. But at the same time, increasing the pressure in a system generally increases the Critical Heat Flux (CHF). This is because an increase in pressure raises the boiling point of the fluid, which means that more heat can be added before boiling (and thus CHF) occurs.",
+        "d": "Correct, the right answer is (d). Increasing the pressure in a system generally increases the Critical Heat Flux (CHF). This is because an increase in pressure raises the boiling point of the fluid, which means that more heat can be added before boiling (and thus CHF) occurs. At the same time, increasing pressure also leads to an increased boiling point. This is a fundamental principle of thermodynamics known as the Clausius-Clapeyron relation, which states that the vapor pressure of a substance increases with temperature. Therefore, at higher pressures, a fluid will boil at a higher temperature."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "d",
       "difficulty": "intermediate"
     }
   ]
