@@ -503,7 +503,7 @@ function initiateProcess() {
     animateArrow();
     // vari1.setAttribute("disabled", true);
     $('.temperature-group').css({
-      "opacity":1,
+      "opacity":0.5,
       "pointer-events":"none"
     });
     // Add additional logic for "Start" action
