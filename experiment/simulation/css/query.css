@@ -183,9 +183,9 @@ em:current font size
   .logo-div {
     width: 6.5rem;
   }
-  .main__task-div:nth-child(4) {
+  /* .main__task-div:nth-child(4) {
     margin-bottom: 6rem;
-  }
+  } */
   .circuit-dia {
     width: 40%;
   }
@@ -291,8 +291,12 @@ em:current font size
     align-items: center;
     justify-content: center;
 }
-.footer {
+/* .footer {
   margin-bottom: 8rem;
+} */
+
+.canvas__div {
+  min-height: calc(100vh - 7 * 3.6rem);
 }
 /* .description{
   padding: 1rem;
@@ -323,9 +327,9 @@ em:current font size
     justify-content: space-evenly;
     padding: 1rem;
   }
-  /* .canvas__div {
+  .canvas__div {
     min-height: calc(100vh - 7 * 3.6rem);
-  } */
+  }
   .objective {
     padding: 2rem;
     align-self: center;

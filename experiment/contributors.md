@@ -8,15 +8,20 @@
 
 ### Lab Developers:
 
-| SNo. |       Name        | Institute |
-| :--: | :---------------: | :-------: |
-|  1   | Sooraj M 191me184 |   NITK    |
-|  2   |      Akshaya      |   NITK    |
-|  3   |  Anusha B Salian  |   NITK    |
-
+| SNo. |      Name       | Institute |
+| :--: | :-------------: | :-------: |
+|  1   | Prasad Mandave  |   NITK    |
+|  2   | Ahemad Daniyal  |   NITK    |
+|  3   |     Akshaya     |   NITK    |
+|  4   | Anusha B Salian |   NITK    |
+|  5   |    Prajna K     |   NITK    |
 ### Content Developers:
 
-| SNo. |       Name        | Institute |
-| :--: | :---------------: | :-------: |
-|  1   |  Nagaraj Kamath   |   NITK    |
-|  2   | Sooraj M 191me184 |   NITK    |
+| SNo. |         Name          | Institute |
+| :--: | :-------------------: | :-------: |
+|  1   |    Ranjan Tunga S     |   NITK    |
+|  2   |    Rohit Kushwaha     |   NITK    |
+|  3   |    Nagaraj Kamath     |   NITK    |
+|  4   |      Vishwas A S      |   NITK    |
+|  5   | Steevan Loyd Sequeira |   NITK    |
+|  5   |    Ganesh Baskaran    |   NITK    |
