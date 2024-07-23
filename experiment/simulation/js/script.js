@@ -12,7 +12,7 @@ const temperature4 = document.querySelector("#temp4");
 const temperature5 = document.querySelector("#temp5");
 const btnCheck1 = document.querySelector(".btn-check1");
 const btnCheck2 = document.querySelector(".btn-check2");
-
+const taskTitle = document.querySelector(".task-title");
 btnStart.addEventListener("click", initiateProcess);
 btnReset.addEventListener("click", resetAll);
 voltageButtons.forEach((voltage) =>
@@ -82,13 +82,16 @@ function displayDiv(ele) {
   });
   if (ele.classList.contains("tool-objective")) {
     document.querySelector(".objective").classList.remove("hide");
+    taskTitle.textContent = "Objective";
   }
   if (ele.classList.contains("tool-description")) {
     document.querySelector(".description").classList.remove("hide");
+    taskTitle.textContent = "Description";
   }
   if (ele.classList.contains("tool-explore")) {
     document.querySelector(".explore").classList.remove("hide");
     document.querySelector(".extra-info").classList.remove("hide");
+    taskTitle.textContent = "Experiment";
     if (temp2 !== 1) {
       drawModel();
       startsim();
@@ -283,12 +286,14 @@ function simperiod() {
     document.querySelector(
       ".comment"
     ).innerHTML = `Wait for  ${steadyState} seconds for steady state`;
+    btnReset.setAttribute("disabled", true);
     if (steadyState === 0) {
       temp2 = 0;
       document.querySelector(
         ".comment"
       ).innerHTML = `The steady state is achieved
 `;
+btnReset.removeAttribute("disabled");
     }
     // printcomment(
     //   "Wait for " + (5 - Math.round(time1)) + " seconds for steady state",
@@ -498,9 +503,11 @@ let btnStartClicked = false;
 function initiateProcess() {
   btnStartClicked = !btnStartClicked;
   if (btnStartClicked) {
+
     btnStart.innerHTML = "Stop";
     document.getElementById("simscreen1").style.visibility = "visible";
     animateArrow();
+    btnReset.removeAttribute("disabled");
     // vari1.setAttribute("disabled", true);
     $('.temperature-group').css({
       "opacity":0.5,
