@@ -243,8 +243,8 @@ function varupdate() {
   document.querySelector("#w2").innerHTML = voltage.toFixed(4) + " V";
   document.querySelector("#ww1").innerHTML = current.toFixed(4) + " A";
   document.querySelector("#ww2").innerHTML = q.toFixed(4) + " W/m\u00B2";
-  document.querySelector("#x1").innerHTML = h.toFixed(4) + " W/m\u00B2 K";
-  
+  // document.querySelector("#x1").innerHTML = h.toFixed(4) + " W/m\u00B2 K";
+
   drawModel(diamter);
 }
 
@@ -293,7 +293,7 @@ function simperiod() {
         ".comment"
       ).innerHTML = `The steady state is achieved
 `;
-btnReset.removeAttribute("disabled");
+      btnReset.removeAttribute("disabled");
     }
     // printcomment(
     //   "Wait for " + (5 - Math.round(time1)) + " seconds for steady state",
@@ -330,27 +330,26 @@ function drawModel(diamter) {
   // ctx.strokeStyle=`colorRed`;
   var background = new Image();
   background.src = "./images//Capture1.PNG";
-  
+
   // Make sure the image is loaded first otherwise nothing will draw.
   background.onload = function () {
     ctx.drawImage(background, 80, 50, 600, 500);
     //ctx.clearRect(78, 210, 46, 64);
-    btnStart.addEventListener("click", function(){
+    btnStart.addEventListener("click", function () {
       ctx.strokeStyle = "red"; // Line color
       ctx.lineWidth = 5; // Line width
       ctx.beginPath();
       ctx.moveTo(340, 382); // Starting point of the line (adjust coordinates as needed)
       ctx.lineTo(550, 382); // Ending point of the line (adjust coordinates as needed)
       ctx.stroke();
-  
-    })
-   
+    });
+
     //  ctx.rect(100, 137, 295, 35);
     //  ctx.stroke();
-    
+
     ctx.fillStyle = "red";
     ctx.fillRect(340, 382 - diamter * 1500, 210, diamter * 1500);
-  
+
     // drawGradient();
     // printcomment("\th =100 W/m<sup>2</sup>.K<br>\t<i>K</i>  = 201 W/m.K", 1)
   };
@@ -461,7 +460,6 @@ function comment1() {
 
     clearInterval(simTimeId);
   }
-
 }
 
 //offset for thermometer and temp change
@@ -503,15 +501,14 @@ let btnStartClicked = false;
 function initiateProcess() {
   btnStartClicked = !btnStartClicked;
   if (btnStartClicked) {
-
     btnStart.innerHTML = "Stop";
     document.getElementById("simscreen1").style.visibility = "visible";
     animateArrow();
     btnReset.removeAttribute("disabled");
     // vari1.setAttribute("disabled", true);
-    $('.temperature-group').css({
-      "opacity":0.5,
-      "pointer-events":"none"
+    $(".temperature-group").css({
+      opacity: 0.5,
+      "pointer-events": "none",
     });
     // Add additional logic for "Start" action
     console.log("Started");
@@ -523,16 +520,14 @@ function initiateProcess() {
     document.getElementById("simscreen1").style.visibility = "hidden";
     // animateArrow();
     ctx.lineWidth = 0;
-    $('.temperature-group').css({
-      "opacity":1,
-      "pointer-events":"auto"
+    $(".temperature-group").css({
+      opacity: 1,
+      "pointer-events": "auto",
     });
     console.log("Stopped");
     // animateArrow();
   }
-
 }
-
 
 function resetAll() {
   if (btnReset.innerHTML === "Next") {
