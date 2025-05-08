@@ -1,13 +1,249 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE - Heat Transfer - Critical Heat Flux</title>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="./css/mathstyle.css" rel="stylesheet" />
+    <!--Stylesheet to display Math functions -->
+
+    <link rel="stylesheet" href="css/query.css" />
+    <!-- <script defer src="https://code.jquery.com/jquerymin.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+    ></script>
+    <script defer src="./js/graph.ob.js"></script>
+    <script defer src="./js/graph_use.ob.js"></script>
+    <script defer src="./js/graph_use2.ob.js"></script>
+  </head>
+  <body>
+    <div class="title-div-container">
+      <div class="title-div">
+        <div class="logo-div">
+          <a href="#"
+            ><img src="images/logo_nitk.png" alt="Logo" class="logo"
+          /></a>
+        </div>
+        <h1> Critical Heat Flux</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="tool-menu">
+          <li class="tool-list tool-objective" onclick="displayDiv(this)">
+            <a class="tool-link" title="Objective">
+              <img src="./images/objective.png" alt="Objective" class="icons" />
+            </a>
+            <span>Objective</span>
+          </li>
+          <li class="tool-list tool-description" onclick="displayDiv(this)">
+            <a class="tool-link" title="Description"
+              ><img
+                src="./images/description.png"
+                alt="Description"
+                class="icons"
+            /></a>
+            <span>Description</span>
+          </li>
+
+          <li class="tool-list tool-explore" onclick="displayDiv(this)">
+            <a class="tool-link" title="Experiment"
+              ><img src="./images/explore.png" alt="Explore" class="icons"
+            /></a>
+            <span>Experiment</span>
+          </li>
+          <!-- <li class="tool-list tool-practice" onclick="displayDiv(this)">
+            <a class="tool-link" title="Variables"
+              ><img src="./images/solution.png" alt="solution" class="icons"
+            /></a>
+            <span>Solve</span>
+          </li> -->
+        </ul>
+      </div>
+      <div class="main">
+        <div class="main-section">
+          <div id="simulation" class="main__task-div">
+            <h3 class="task-title">Objective</h3>
+
+            <div class="canvas__div">
+              <div class="task-screen objective">
+                
+                <p class="objective__main">
+                  To experimentally study the heat transfer through a long fin
+                  experiment and compare it with analytical solutions
+                </p>
+              </div>
+              <div class="task-screen description hide">
+                
+                <div class="description-conatiner">
+                  <img
+                    src="./images/disc1.PNG"
+                 
+                    alt="apparatus"
+                   
+                    style="position: relative; width: 350px; height: 350px; display: flex;align-items: center;justify-content: center;"
+                  />
+                
+              
+                </div>
+                <div class="model-detail">
+                  <p>Formulae</p>
+                  <span></span>
+                  <p>Heat Input, Q (Watts) = Volts (V) x Current (I)</p>
+                  <p>Critical Heat Flux, qc (W/m<sup>2</sup>) = Q/ π x Diameter (d) x Length (L)</p>
+                 
+                </div>
+              </div>
+              <div class="task-screen explore hide">
+              
+                <div class="explore-controls">
+                  <div id="observe" class="observe" style="display: none;" >
+                    <p id="info">Observation </p></br>
+                    <p class="extra-info" id="extra-info" style="visibility: hidden;">
+                      <p id="p1">Area = <span id="w1"></span> </p></br>
+                      <p id="p2">Voltage =  <span id="w2"></span>  </p></br>
+                      <p id="p4">Current=<span id="ww1"></span></p></br>
+                      <p id="p3">Heat Flux =<span id="ww2"></span></p></br>
+                      <!-- <p id="p5">Heat transfer co-efficient =<span id="x1"></span></p></br> -->
+                    </p>
+                    
+                  </div>
+               
+                    <div id="main1" class="main1">
+                   <canvas
+                     id="simscreen"
+                      class="simscreen"
+                      width="800"
+                      height="500"
+                      class="canvas"
+                     >
+                    </canvas>
+                  <canvas
+                     id="simscreen1"
+                     class="simscreen1"
+                      width="200"
+                     height="100";
+                     style="visibility: hidden;"
+            
+                   ></canvas>
+                  </div>
+               </div>
+                  <div class="voltage-set">
+                    <p>Controls</p>
+                    <button class="btn btn-start">Start</button>
+                    <button class="btn btn-reset"disabled>Next</button>
+                  </div>
+                  <!-- <div class="input-group">
+                    <input
+                      type="radio"
+                      name="voltage"
+                      id="v10"
+                      value="10"
+                      class="voltage"
+                    />
+                    <label for="v10" class="voltage_label">10V</label>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="voltage"
+                      id="v20"
+                      value="20"
+                      class="voltage"
+                    />
+                    <label for="v20" class="voltage_label">20V</label>
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="radio"
+                      name="voltage"
+                      id="v30"
+                      value="30"
+                      class="voltage"
+                    />
+                    <label for="v30"  class="voltage_label">30V</label>
+                  </div> -->
+                  <div class="temperature-set">
+                    <!-- <div class="temperature-group">
+                        <span class="temp-text">Vf(cc/min)</span>
+                        <input type="range" min="0" max="100" value="10" class="slider" id="vfslider">
+                        <span class="temp-val" id="vfspinner">10</span>
+                    </div> -->
+                    <div class="temperature-group">
+                      <span class="temp-text">Voltage(V)</span>
+                      <div class="var-group">
+                        <div class="var-slider" id="tinfslider"></div>
+                        <input class="var-spinner" id="tinfspinner" />
+                      </div>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">Current(A)</span>
+                      <div class="var-group">
+                        <div class="var-slider" id="tbslider"></div>
+                        <input class="var-spinner" id="tbspinner" />
+                      </div>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">Diameter(m)</span>
+                      <div class="var-group">
+                        <div class="var-slider" id="lslider"></div>
+                        <input class="var-spinner" id="lspinner" />
+                      </div>
+                    </div>
+                    <div class="temperature-group">
+                      <span class="temp-text">Length(m)</span>
+                      <div class="var-group">
+                        <div class="var-slider" id="pslider"></div>
+                        <input class="temp-val" id="pspinner" />
+                      </div>
+                    </div>
+                    <!-- <div class="temperature-group">
+                      <span class="temp-text">A (mm<sup>2</sup>)</span>
+                      <div class="var-group">
+                        <div class="var-slider" id="acslider"></div>
+                        <input class="var-spinner" id="acspinner" />
+                      </div>
+                    </div> -->
+                  </div>
+                  <p class="comment"></p>
+
+                
+                 
+              
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__task-div footer">
+            <p>Copyright © SOLVE The Virtual Lab @ NITK Surathkal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script defer src="js/script.js"></script>
+  </body>
 </html>
