@@ -25,6 +25,6 @@ The closed container houses a heater coil and the nichrome wire fixtures which a
 
 Formulae:
 
-1. Heat Input, Q (Watts) = Volts (V) x Current (I)
-2. Critical Heat Flux, q<sub>c</sub> (W/m<sup>2</sup>) = Q/ &pi; x Diameter (d) x Length (L)
+1. Heat Input, $Q (Watts) = Volts (V) \times Current (I)$
+2. Critical Heat Flux, $q_c (W/m^2) = \frac{Q}{⨅} \times Diameter (d) \times Length (L) $
 <!-- 3. The heat transfer coefficient (h) is calculated using Newton's Law of Cooling, i.e., q = h ΔT -->
