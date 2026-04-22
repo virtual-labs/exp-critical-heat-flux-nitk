@@ -4,9 +4,9 @@
 
 | SNo. |        Name         | Institute |              Department              |
 | :--: | :-----------------: | :-------: | :----------------------------------: |
-|  1   | Dr. K V Gangadharan |   NITK    | Department of Mechanical Engineering |
-|  2   | Dr. Parthasarathy P |   NITK    | Department of Mechanical Engineering |
-
+|  1   | Dr. Parthasarathy P |   NITK    | Department of Mechanical Engineering |
+|  2   | Dr. K V Gangadharan |   NITK    | Department of Mechanical Engineering |
+\
 ### Lab Developers:
 
 | SNo. |         Name          | Institute |

@@ -13,10 +13,10 @@
     <li><a href="https://www.youtube.com/watch?v=FuGZ59NXL0A">Critical heat flux</a></li>
 <td>Developers:<br/> 
     <ul style="list-style-type: none;">
-     <li>Dr. K V Gangadharan | NITK</li> 
      <li>Dr. Parthasarathy P | NITK</li>
+     <li>Dr. K V Gangadharan | NITK</li> 
     </ul>
-    </br> 
+    </br>   
       Contributors :
     <ul style="list-style-type: none;">
     <li>Nagaraj Kamath | NITK</li>
