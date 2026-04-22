@@ -1,0 +1,1 @@
+To determine the critical heat flux of a nichrome wire and its heat transfer coefficient.
